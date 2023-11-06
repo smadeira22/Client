@@ -5,5 +5,6 @@ Some of the interactions include: login in, submiting ansewrs, submiting feedbac
 
 ## Instructions
 
-- run live server 
+- To install libraries run `npm install`
+- To run server run `npm run dev`
 - interact with the system!!
