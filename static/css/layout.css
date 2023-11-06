@@ -1,0 +1,13 @@
+/* id, classes, elements*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   /* margin-top: 300px;*/
+    background-color: azure;
+    height: 40vh;
+    margin: 300px;
+    border-radius: 3rem;
+}

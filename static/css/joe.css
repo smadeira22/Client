@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+#fname {
+    border-radius: 25px;
+    box-sizing: border-box;
+    border: 50px solid #BDE3FF;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 60%;
+    height: 300px;
+    background-color: white;
+    color: lightgray;
+    text-align: center;
+    z-index: 1;
+}
+
+#submit {
+    padding: 5px;
+    margin: auto;
+    display: block;
+}
