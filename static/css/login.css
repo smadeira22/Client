@@ -1,0 +1,40 @@
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
+
+.img {
+  margin-top: 1.5%;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  background-color: #9747FF;
+  width: 25%;
+  margin: auto;
+  padding: 3%;
+  padding-top: 1%;
+  border-radius: 45px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 42px;
+}
+
+.button {
+  width: 40%;
+  height: auto;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: none;
+  font-size: 26px;
+  border-radius: 35px;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 3%;
+  text-align: center;
+}

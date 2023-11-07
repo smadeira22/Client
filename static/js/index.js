@@ -1,26 +1,16 @@
-// const teacherBtn = document.querySelector('#btn-1');
-// const studentBtn = document.querySelector('#btn-2');
-// const studentBtn1 = document.querySelector('#btn-3');
+const btn1 = document.querySelector('#btn1')
+const btn2 = document.querySelector('#btn2')
 
+btn1.addEventListener('click', function (e) {
+    console.log('hello')
+    e.preventDefault()
+    location.href = '/menu.html'
+})
 
+btn2.addEventListener('click', function (e) {
+    console.log('hello')
+    e.preventDefault()
+    location.href = '/performance.html'
+})
 
-// teacherBtn.onclick = function(e) {
-//     e.preventDefault();
-  
-//     // Replace localhost and the folder name
-//     // based on your setup
-//     location.href = '/performance.html';
-//   }
-
-// studentBtn.onclick = function(e) {
-//   e.preventDefault();
-  
-//   location.href = '/menu.html';
-// }
-
-// studentBtn1.onclick = function(e) {
-//   e.preventDefault();
-  
-//   location.href = '/test.html';
-// }
 
