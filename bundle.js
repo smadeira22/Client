@@ -15,14 +15,16 @@ teacherBtn.onclick = function(e) {
 studentBtn.onclick = function(e) {
   e.preventDefault();
   
-  location.href = '/test.html';
+  location.href = '/menu.html';
 }
 
-studentBtn1.onclick = function(e) {
-  e.preventDefault();
+// studentBtn1.onclick = function(e) {
+//   e.preventDefault();
   
-  location.href = '/test.html';
-}
+//   location.href = '/test.html';
+// }
+
+
 
 
 },{}]},{},[1]);
