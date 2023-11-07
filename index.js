@@ -1,4 +1,6 @@
-let count = 0;
+let countA = 0;
+let countB = 0;
+let countC = 0;
 
 const correctA = document.querySelector('#correct-a');
 const correctB = document.querySelector('#correct-b');
@@ -19,17 +21,45 @@ const correctP = document.querySelector('#correct-p');
 const correctQ = document.querySelector('#correct-q');
 const correctR = document.querySelector('#correct-r');
 
-const correctAns = [correctA, correctB, correctC, correctD, correctE, correctF, correctG, correctH, correctI, correctJ, correctK, correctL, correctM, correctN, correctO, correctP, correctQ, correctR];
 
-correctAns.forEach(option => {
+const correctAnsA = [correctA, correctB, correctC, correctD, correctE, correctF];
+const correctAnsB = [correctG, correctH, correctI, correctJ, correctK, correctL];
+const correctAnsC = [correctM, correctN, correctO, correctP, correctQ, correctR];
+
+correctAnsA.forEach(option => {
     option.addEventListener('click', function(e) {
         e.target.disabled = true;   //Prevents double-clicking
-        count++;
-        const result = document.querySelector('.result');
-        result.innerText = `Your score is: ${count} out of 18`;
+        countA++;
+        const result = document.querySelector('.resultA');
+        result.innerText = `Your score in Topic 1 is: ${countA} out of 6`;
+        const score = document.querySelector('.Score');
+        score.innerText = `Your total score is ${countA + countB+ countC}`;
     })
 })
 
+correctAnsB.forEach(option => {
+    option.addEventListener('click', function(e) {
+        e.target.disabled = true;   //Prevents double-clicking
+        countB++;
+        const result = document.querySelector('.resultB');
+        result.innerText = `Your score in Topic 2 is: ${countB} out of 6`;
+        const score = document.querySelector('.Score');
+        score.innerText = `Your total score is ${countA + countB+ countC}`;
+       
+    })
+})
+
+correctAnsC.forEach(option => {
+    option.addEventListener('click', function(e) {
+        e.target.disabled = true;   //Prevents double-clicking
+        countC++;
+        const result = document.querySelector('.resultC');
+        result.innerText = `Your score in Topic 3 is: ${countC} out of 6`;
+        const score = document.querySelector('.Score');
+        score.innerText = `Your total score is ${countA + countB+ countC}`;
+       
+    })
+})
 
 
 
