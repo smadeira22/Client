@@ -22,14 +22,15 @@ const correctR = document.querySelector('#correct-r');
 const correctAns = [correctA, correctB, correctC, correctD, correctE, correctF, correctG, correctH, correctI, correctJ, correctK, correctL, correctM, correctN, correctO, correctP, correctQ, correctR];
 
 correctAns.forEach(option => {
-    option.addEventListener('click', function() {
+    option.addEventListener('click', function(e) {
+        e.target.disabled = true;   //Prevents double-clicking
         count++;
-        console.log(count);
+        const result = document.querySelector('.result');
+        result.innerText = `Your score is: ${count} out of 18`;
     })
 })
 
 
-const result = document.querySelector('.result');
-result.innerText = `Your score is: ${count} out of 18`;
+
 
 
